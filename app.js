@@ -64,35 +64,35 @@ function getInputValue(id){
       
 }
 
-// document.getElementById('calculate').addEventListener('click', function(){
+document.getElementById('calculate').addEventListener('click', function(){
 
-//     const perPlayer = getInputValue('per-player');
+    const perPlayer = getInputValue('per-player');
     
-//     const perPlayerTotalCost = perPlayer *nameArray.length;
-//     if(isNaN(perPlayer)){
-//         alert('Inavlid Input')
-//         return;
-//     }
-//      document.getElementById('player-expense').innerText = perPlayerTotalCost;
+    const perPlayerTotalCost = perPlayer *nameArray.length;
+    if(isNaN(perPlayer)){
+        alert('Inavlid Input')
+        return;
+    }
+     document.getElementById('player-expense').innerText = perPlayerTotalCost;
     
-// });
+});
 
-// document.getElementById('calculate-total').addEventListener('click', function(){
-//     const player = document.getElementById('player-expense').innerText;
-//     const playerExpense = parseInt(player);
-//     const managerExpense = getInputValue('manager');
-//     const coachExpense = getInputValue('coach');
+document.getElementById('calculate-total').addEventListener('click', function(){
+    const player = document.getElementById('player-expense').innerText;
+    const playerExpense = parseInt(player);
+    const managerExpense = getInputValue('manager');
+    const coachExpense = getInputValue('coach');
 
-//     const total = playerExpense + managerExpense + coachExpense;
+    const total = playerExpense + managerExpense + coachExpense;
     
-//     const totalCost = document.getElementById('total-cost');
-//     if(isNaN(total)){
-//         alert('Invalid Input')
-//         return ;
-//     }
-//     totalCost.innerText = total;
+    const totalCost = document.getElementById('total-cost');
+    if(isNaN(total)){
+        alert('Invalid Input')
+        return ;
+    }
+    totalCost.innerText = total;
 
-// });
+});
 
 
 
