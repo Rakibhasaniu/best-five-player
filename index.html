@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Football player</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-slate-900 h-auto relative">
+      <div class="grid grid-cols-4 gap-2">
+        <div class="mt-12">
+          
+        </div>
+        <div class="col-span-2 relative mt-12 mb-12">
+          <h1 class="text-5xl text-orange-700 text-center mt-12">
+            All Your Favourite Player Here
+          </h1>
+          <p class="text-white mt-10 text-center">
+            As we count down to the start of the global showpiece in Qatar on 20 November, FIFA+ is showcasing 100 of the
+            greatest moments in FIFA World Cup history.
+          </p>
+        </div>
+        <div class="">
+          
+        </div>
+      </div>
+      
+    </header>
+    <main class="w-9/12 mx-auto">
+      <div class="grid gap-4 grid-cols-4 grid-rows-2">
+        <div class="bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img src="images/pic1.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Messi</h2>
+           
+            <p>36 Goals . 120 Assist</p>
+            <div class="card-actions">
+              <button class="btn btn-primary px-6 py-2 text-1xl rounded-xl disabled:bg-gray-400" onclick="addToSelect(this)" >SELECT</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img src="images/pic2.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Neymar</h2>
+            <p>30 Goals . 110 Assist</p>
+            <div class="card-actions">
+              <button class="btn btn-primary px-6 py-2 text-1xl rounded-xl disabled:bg-gray-400" onclick="addToSelect(this)">SELECT</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img src="images/pic5.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Renato</h2>
+            <p>15 Goals . 89 Assist</p>
+            <div class="card-actions">
+              <button class="btn btn-primary px-6 py-2 text-1xl rounded-xl disabled:bg-gray-400" onclick="addToSelect(this)">SELECT</button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img src="images/pic3.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Mbappe</h2>
+            <p>28 Goals.105 Assist</p>
+            <div class="card-actions">
+              <button class="bbtn btn-primary px-6 py-2 text-1xl rounded-xl disabled:bg-gray-400" onclick="addToSelect(this)" >SELECT</button>
+            </div>
+          </div>
+        </div> -->
+        <div class="bg-base-100 shadow-xl">
+          
+            <h1 class="text-2xl text-center mt-7">Selected- <span id="total-added">0</span> </h1>
+        <table>
+            <tbody id="tb">
+                
+            </tbody>
+        </table>
+            <tr>
+
+            </tr>
+        </div>
+        <div class="bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img src="images/pic3.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Mbappe</h2>
+            <p>28 Goals.105 Assist</p>
+            <div class="card-actions">
+              <button class="bbtn btn-primary px-6 py-2 text-1xl rounded-xl disabled:bg-gray-400" onclick="addToSelect(this)" >SELECT</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img src="images/pic6.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Machado</h2>
+            <p>25 Goals . 100 Assist</p>
+            <div class="card-actions">
+              <button class="btn btn-primary px-6 py-2 text-1xl rounded-xl disabled:bg-gray-400" onclick="addToSelect(this)">SELECT</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img src="images/pic4.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Ramos</h2>
+            <p>21 Goals . 90 Assist</p>
+            <div class="card-actions">
+              <button class="btn btn-primary px-6 py-2 text-1xl rounded-xl disabled:bg-gray-400" onclick="addToSelect(this)">SELECT</button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img src="images/pic5.png" alt="Shoes" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Renato</h2>
+            <p>15 Goals . 89 Assist</p>
+            <div class="card-actions">
+              <button class="btn btn-primary px-6 py-2 text-1xl rounded-xl disabled:bg-gray-400" onclick="addToSelect(this)">SELECT</button>
+            </div>
+          </div>
+        </div> -->
+        
+        <div class="bg-base-100 shadow-xl text-center">
+            <h1 class="mb-3 text-2xl">Club Budget</h1>
+            <p>Per Player: <input type="number" name="" id="per-player"> </p>
+            <button id="calculate" class=" text-gray-100 px-12 py-2 rounded-xl mt-4 bg-indigo-500 shadow-lg shadow-indigo-500/50 ml-12	">Calculate</button>
+            <p class="m-2 text-2xl">Player Expense:$ <span id="player-expense">00</span></p>
+            
+            <p class="m-2">Manager : <input type="number" name="" id="manager"></p>
+            <p class="m-2 mt-5">Coach : <input type="number" name="" id="coach" class="ml-4"> </p>
+            <button id="calculate-total" class="text-gray-100 px-12 py-2 mt-4 	 rounded-xl ml-12  bg-indigo-500 shadow-lg shadow-indigo-500/50">Calculate</button>
+            <p class="text-2xl mt-3">Total : $<span id="total-cost">00</span></p>
+          
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-white text-center mb-12 mt-10">
+      <p>Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
